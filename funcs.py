@@ -65,9 +65,12 @@ def gen_service() -> None:
 
         if service_act:
             sh(f"sudo systemctl enable --now {service_name}")
+            print("\033c")
 
         else:
             pass
+            print("\033c")
 
     else:
         pass
+        print("\033c")

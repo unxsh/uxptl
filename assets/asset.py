@@ -1,3 +1,4 @@
+version: str = "0.1"
 greeting: str = """
      _------------------------_-----_-_
     |  _   _  __  __  _ __   | |_  | | |
@@ -14,8 +15,6 @@ helpmsg: str = """   _--------------------------------------_
  | argv                     | description                       |
  |--------------------------|-----------------------------------|
  | -g, --gen                | generate new serive file          |
- | -m, --move               | move file in /etc/systemd/system/ |
- | -s, --activate           | activate daemon                   |
  | -h, --help               | print this massage                |
  | -v, --version            | print program version             |
   `------------------------------------------------------------`

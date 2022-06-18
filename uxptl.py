@@ -1,24 +1,18 @@
-from os import system as sh
 from sys import argv
-from assets.asset import greeting, helpmsg
+from assets.asset import greeting, helpmsg, version
 from flags import arg_pars
 from funcs import gen_service
 
-print(greeting)
 
 args: int = arg_pars(argv)
 
 if args == 1:
+    print(greeting)
     gen_service()
 
 elif args == 2:
-    print("-m", "--move")
-
-elif args == 3:
-    print("-s", "--activate")
-
-elif args == 4:
-    print("-v", "--version")
+    print("\n", "uxptl -", version, "\n")
 
 else:
+    print(greeting)
     print(helpmsg)
