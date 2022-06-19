@@ -25,7 +25,7 @@ CFLAGS: str = """ \
 BINDIR: str = "/usr/local/bin"
 
 
-BUILD = f"python {PYFLAGS} -m nuitka {CFLAGS} -o uxptl ../{MAIN}"
+BUILD: str = f"python {PYFLAGS} -m nuitka {CFLAGS} -o uxptl ../{MAIN}"
 
 
 if len(argv) == 1:
