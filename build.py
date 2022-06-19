@@ -34,6 +34,8 @@ if len(argv) == 1:
 elif argv[1] == "install":
     try:
         mkdir("build/")
+        mkdir("build/")
+        chdir("build/")
 
     except FileExistsError:
         rmtree("build/")
@@ -46,6 +48,8 @@ elif argv[1] == "install":
 elif argv[1] == "build":
     try:
         mkdir("build/")
+        mkdir("build/")
+        chdir("build/")
 
     except FileExistsError:
         rmtree("build/")
