@@ -55,7 +55,7 @@ git clone https://github.com/unxsh/uxptl.git
 cd uxptl/
 ```
 ### 2) installing dependencies 📦
-### dep list
+### Dependencies for build 🧑‍💻
 ```
 nuitka
 python >= 3.8
