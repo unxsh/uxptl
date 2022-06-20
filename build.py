@@ -45,7 +45,7 @@ elif argv[1] == "install":
         chdir("build/")
 
     sh(BUILD)
-    sh(f"sudo mv uxptl {BINDIR}")
+    sh(f"sudo mv {OFILE} {BINDIR}")
 
 elif argv[1] == "build":
     try:
